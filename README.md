@@ -6,71 +6,72 @@ project-root/
 │   └── manifest.json
 │
 ├── src/
-│   ├── components/
-│   │   ├── common/
+│   ├── components/            # Các thành phần giao diện chính
+│   │   ├── common/            # Thành phần dùng chung
 │   │   │   ├── Button.tsx
 │   │   │   ├── Input.tsx
 │   │   │   ├── Modal.tsx
 │   │   │   └── Layout.tsx
-│   │   ├── feature1/
+│   │   ├── feature1/          # Thành phần tính năng 1
 │   │   │   ├── Feature1Component.tsx
 │   │   │   └── Feature1Styles.module.css
-│   │   └── feature2/
+│   │   └── feature2/          # Thành phần tính năng 2
 │   │       ├── Feature2Component.tsx
 │   │       └── Feature2Styles.module.css
 │   │
-│   ├── pages/
+│   ├── pages/                 # Các trang chính
 │   │   ├── Home.tsx
 │   │   ├── Login.tsx
 │   │   ├── Dashboard.tsx
 │   │   └── NotFound.tsx
 │   │
-│   ├── hooks/
+│   ├── hooks/                 # Các custom hook
 │   │   ├── useAuth.ts
 │   │   ├── useFetch.ts
 │   │   └── useForm.ts
 │   │
-│   ├── context/
+│   ├── context/               # Context API
 │   │   ├── AuthContext.tsx
 │   │   └── ThemeContext.tsx
 │   │
-│   ├── services/
+│   ├── services/              # Các dịch vụ API
 │   │   ├── api.ts
 │   │   ├── authService.ts
 │   │   └── userService.ts
 │   │
-│   ├── utils/
+│   ├── utils/                 # Các tiện ích chung
 │   │   ├── helpers.ts
 │   │   ├── validation.ts
 │   │   └── constants.ts
 │   │
-│   ├── styles/
+│   ├── styles/                # Các tệp CSS chung
 │   │   ├── global.css
 │   │   ├── variables.css
 │   │   └── reset.css
 │   │
-│   ├── assets/
+│   ├── assets/                # Tài nguyên
 │   │   ├── images/
 │   │   ├── icons/
 │   │   └── fonts/
 │   │
-│   ├── routes/
+│   ├── routes/                # Định nghĩa routing
 │   │   ├── PrivateRoute.tsx
 │   │   └── Routes.tsx
 │   │
-│   ├── types/
+│   ├── types/                 # Các định nghĩa kiểu TypeScript
 │   │   ├── user.ts
 │   │   ├── product.ts
 │   │   └── common.ts
 │   │
-│   ├── App.tsx
-│   └── index.tsx
+│   ├── App.tsx                # Thành phần chính của ứng dụng
+│   └── index.tsx              # Điểm khởi đầu của ứng dụng
 │
-├── package.json
-├── tsconfig.json
-├── .gitignore
-├── README.md
-└── .env
+├── package.json               # Cấu hình các package
+├── tsconfig.json              # Cấu hình TypeScript
+├── .gitignore                 # Tệp khai báo các tệp/thư mục bị bỏ qua bởi Git
+├── README.md                  # Hướng dẫn dự án
+└── .env                       # Tệp môi trường
+
 
 
 Giải thích cấu trúc:
