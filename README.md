@@ -1,3 +1,102 @@
+project-root/
+│
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+│
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Input.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   └── Layout.tsx
+│   │   ├── feature1/
+│   │   │   ├── Feature1Component.tsx
+│   │   │   └── Feature1Styles.module.css
+│   │   └── feature2/
+│   │       ├── Feature2Component.tsx
+│   │       └── Feature2Styles.module.css
+│   │
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── Login.tsx
+│   │   ├── Dashboard.tsx
+│   │   └── NotFound.tsx
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   │   ├── useFetch.ts
+│   │   └── useForm.ts
+│   │
+│   ├── context/
+│   │   ├── AuthContext.tsx
+│   │   └── ThemeContext.tsx
+│   │
+│   ├── services/
+│   │   ├── api.ts
+│   │   ├── authService.ts
+│   │   └── userService.ts
+│   │
+│   ├── utils/
+│   │   ├── helpers.ts
+│   │   ├── validation.ts
+│   │   └── constants.ts
+│   │
+│   ├── styles/
+│   │   ├── global.css
+│   │   ├── variables.css
+│   │   └── reset.css
+│   │
+│   ├── assets/
+│   │   ├── images/
+│   │   ├── icons/
+│   │   └── fonts/
+│   │
+│   ├── routes/
+│   │   ├── PrivateRoute.tsx
+│   │   └── Routes.tsx
+│   │
+│   ├── types/
+│   │   ├── user.ts
+│   │   ├── product.ts
+│   │   └── common.ts
+│   │
+│   ├── App.tsx
+│   └── index.tsx
+│
+├── package.json
+├── tsconfig.json
+├── .gitignore
+├── README.md
+└── .env
+
+
+Giải thích cấu trúc:
+
+public/: Chứa các tài nguyên tĩnh và file HTML gốc
+src/components/:
+
+common/: Các component dùng chung
+Các thư mục feature: Component theo từng tính năng
+
+
+pages/: Các trang chính của ứng dụng
+hooks/: Custom React hooks
+context/: React context cho quản lý state toàn cục
+services/: Các service gọi API
+utils/: Các hàm tiện ích, helper
+styles/: Các file CSS toàn cục
+assets/: Hình ảnh, icon, font
+routes/: Cấu hình định tuyến
+types/: Định nghĩa TypeScript
+
+Để bắt đầu, bạn có thể:
+
+Sử dụng Create React App hoặc Vite
+Cài đặt TypeScript
+Thêm các thư viện cần thiết như React Router, state management
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
