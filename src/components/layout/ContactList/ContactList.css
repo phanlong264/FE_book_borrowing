@@ -1,0 +1,31 @@
+/* ContactList.css */
+.contacts {
+    width: 261px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+  }
+  
+  .contacts h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .contacts ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contacts li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .contacts li:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
