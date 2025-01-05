@@ -1,0 +1,40 @@
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #87EE61;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .search-bar {
+    font-size: 16px;
+    width: 322px;
+    height: 47px;
+    background-color: #87EE61;
+    border-radius: 25px;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+  
+  .profile-header span {
+    margin-right: 10px;
+  }
+  
+  .header-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  

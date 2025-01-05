@@ -1,0 +1,147 @@
+/* Global styles for container */
+.home-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #F0F2F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Create post section */
+.create-post {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  margin-bottom: 20px;
+}
+
+.create-post-input {
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  background-color: #F0F2F5;
+  border-radius: 30px; /* Fully rounded input */
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+.create-post-input:focus {
+  box-shadow: 0 0 3px #1890ff;
+}
+
+.create-post-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.action-button {
+  padding: 8px 16px;
+  background: #F0F2F5;
+  color: #65676B;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 20px; /* Rounded button */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #E4E6EB;
+  color: #000;
+}
+
+/* Post list with scrollable feature */
+.posts-list {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 600px; /* Adjust height as needed */
+  overflow-y: auto;
+  padding-right: 5px; /* Ensure scrollbar doesn't overlap content */
+}
+
+.posts-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.posts-list::-webkit-scrollbar-thumb {
+  background-color: #C0C0C0;
+  border-radius: 4px;
+}
+
+.posts-list::-webkit-scrollbar-thumb:hover {
+  background-color: #A0A0A0;
+}
+
+.posts-list::-webkit-scrollbar-track {
+  background-color: #F0F2F5;
+}
+
+/* Post item */
+.post-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.post-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post-header span {
+  font-weight: 600;
+  font-size: 16px; /* Slightly larger text */
+}
+
+.post-content {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #050505; /* Adjust text color */
+}
+
+.post-item img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid #E4E6EB;
+  justify-content: space-between;
+}
+
+.post-actions .action-button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+  border-radius: 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.post-actions .action-button:hover {
+  background-color: #E4E6EB;
+  color: #000;
+}
